@@ -2,6 +2,6 @@ package calculation;
 
 public interface Calculation {
 
-  double calculate(float defeatedPercentage);
+  double calculate(double defeatedPercentage);
 
 }

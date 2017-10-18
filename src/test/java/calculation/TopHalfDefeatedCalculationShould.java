@@ -17,12 +17,12 @@ public class TopHalfDefeatedCalculationShould {
   @Parameterized.Parameters
   public static Collection<Object[]> data() {
     return Arrays.asList(new Object[][] {
-            { 100.0f, 10.0 }, { 90.0f, 15.0 }, { 80.0f, 20 }, { 70.0f, 25 }, { 60.0f, 30 }, { 50.0f, 35 }
+            { 100.0, 10.0 }, { 90.0, 15.0 }, { 80.0, 20 }, { 70.0, 25 }, { 60.0, 30 }, { 50.0, 35 }
     });
   }
 
   @Parameterized.Parameter
-  public /* NOT private */ float defeatedPercentage;
+  public /* NOT private */ double defeatedPercentage;
 
   @Parameterized.Parameter(1)
   public /* NOT private */ double expectedSurvivorsPercentage;

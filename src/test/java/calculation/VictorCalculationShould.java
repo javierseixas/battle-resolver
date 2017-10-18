@@ -17,12 +17,12 @@ public class VictorCalculationShould {
   @Parameterized.Parameters
   public static Collection<Object[]> data() {
     return Arrays.asList(new Object[][] {
-            { 20.0f, 96.4 }, { 30.0f, 91.9 }, { 50.0f, 77.5 }, { 70.0f, 55.9 }, { 80.0f, 42.4 }, { 90.0f, 27.1 }, { 100.0f, 10 }
+            { 20.0, 96.4 }, { 30.0, 91.9 }, { 50.0, 77.5 }, { 70.0, 55.9 }, { 80.0, 42.4 }, { 90.0, 27.1 }, { 100.0, 10 }
     });
   }
 
   @Parameterized.Parameter // first data value (0) is default
-  public /* NOT private */ float defeatedPercentage;
+  public /* NOT private */ double defeatedPercentage;
 
   @Parameterized.Parameter(1)
   public /* NOT private */ double expectedSurvivorsPercentage;
