@@ -17,7 +17,7 @@ public class HalfDownDefeatedCalculationShould {
   @Parameterized.Parameters
   public static Collection<Object[]> data() {
     return Arrays.asList(new Object[][] {
-            { 10.0f, -5.0 }, { 20.0f, 5.0 }, { 30.0f, 15 }, { 40.0f, 25 }, { 50.0f, 35 }
+            { 10.0f, 0.0 }, { 20.0f, 5.0 }, { 30.0f, 15 }, { 40.0f, 25 }, { 50.0f, 35 }
     });
   }
 
