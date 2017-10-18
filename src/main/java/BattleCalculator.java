@@ -59,7 +59,7 @@ public class BattleCalculator {
   }
 
   private int calculateVictorRemainingPower(Army victorArmy, double percentage) {
-    int remaining = (int) Math.floor(victorArmy.getBasePower() * percentage / 100);
+    int remaining = (int) Math.round(victorArmy.getBasePower() * percentage / 100);
 
     return remaining < 1 ? 1 : remaining;
   }
